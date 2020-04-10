@@ -1593,6 +1593,31 @@ export default class Component extends Element {
     settings = _.isEmpty(settings) ? {} : settings;
     settings.base64Upload = true;
     settings.mediaEmbed = { previewsInData: true };
+    settings.toolbar =  {
+      items: [
+        'heading',
+        'fontFamily',
+        'fontSize',
+        '|',
+        'bold',
+        'italic',
+        'fontColor',
+        'fontBackgroundColor',
+         '|',
+        'indent',
+        'outdent',
+        '|',
+        'link',
+        'bulletedList',
+        'numberedList',
+        'insertTable',
+        'imageUpload',
+        'blockQuote',
+        'code',
+        'undo',
+        'redo'
+      ]
+    };
     settings.image = {
       toolbar: ['imageTextAlternative', '|', 'imageStyle:full', 'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight'],
       styles: ['full', 'alignLeft', 'alignCenter', 'alignRight']
